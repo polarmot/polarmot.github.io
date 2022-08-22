@@ -1,1 +1,119 @@
-Welcome to PolarMOT
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.38">
+  <meta name="author" content="Aleksandr Kim">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  
+  <title>PolarMOT</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="main.css">
+</head>
+  
+<body>
+<div class="container">
+    <div class="row mb-4">
+    <div class="col-md-12 text-center">
+        <h1 class="title mt-5">PolarMOT: How Far Can Geometric Relations Take Us in 3D Multi-Object Tracking?</h1>
+    </div>
+</div>
+    
+<!--    authors and affiliation-->
+    <div class="row mb-4">
+    <div class="col-md-12 text-center">
+        <h3>
+        <a href="https://github.com/aleksandrkim61/" target="_blank">Aleksandr Kim</a>, 
+        <a href="https://dvl.in.tum.de/team/braso/" target="_blank">Guillem Brasó</a>, 
+        <a href="https://dvl.in.tum.de/team/osep/" target="_blank">Aljoša Ošep</a>, 
+        and
+        <a href="https://dvl.in.tum.de/team/lealtaixe/" target="_blank">Laura Leal-Taixé</a>
+        <p class="institution" style="padding-top:0.5em">Dynamic Vision and Learning Group, Technical University of Munich</p>
+        <i>European Conference on Computer Vision (<b>ECCV</b>)</i>, 2022
+        </h3>
+    </div>
+    </div>
+  
+<!--    teaser or results video-->
+    <div>
+    <img src="figures/renders_zoomed_in_peds_font-cropped.png" style="width:100%">
+    <br>
+    <br>
+
+
+<!--    links    -->
+    <div class="row author-group">
+    <div class="col-md-4 text-right">
+        <h1><a href="https://arxiv.org/abs/2208.01957" target="_blank">Paper</a></h1>
+    </div>
+    <div class="col-md-8 text-center">
+        <h1><a href="https://github.com/aleksandrkim61/PolarMOT" target="_blank">Code</a></h1>
+    </div>
+    </div>
+
+<!--    abstract    -->
+    <br>
+    <hr class="my-0">
+    <div class="row my-4">
+    <div class="col text-center">
+        <p class="text-left">
+        <b>Abstract:</b> Most (3D) multi-object tracking methods rely on appearance-based cues for data association. By contrast, we investigate how far we can get by only encoding geometric relationships between objects in 3D space as cues for data-driven data association. We encode 3D detections as nodes in a graph, where spatial and temporal pairwise relations among objects are encoded via localized polar coordinates on graph edges. This representation makes our geometric relations invariant to global transformations and smooth trajectory changes, especially under non-holonomic motion. This allows our graph neural network to learn to effectively encode temporal and spatial interactions and fully leverage contextual and motion cues to obtain final scene interpretation by posing data association as edge classification. We establish a new state-of-the-art on nuScenes dataset and, more importantly, show that our method, PolarMOT, generalizes remarkably well across different locations (Boston, Singapore, Karlsruhe) and datasets (nuScenes and KITTI).
+        </p>
+    </div>
+    </div>    
+    
+<!--    main figure    -->
+    <hr class="mt-0 mb-4">
+    <div class="row mt-4">
+    <div class="col text-center">
+        <h2 class="mb-4" text-align="center">High-level overview of our graph method</h2>
+    </div>
+
+
+    <hr class="my-0">
+    <br>
+    <img src="figures/teaser_updated_2_font-cropped.png" style="width:100%">
+    <br>
+    </div>
+
+    <br>
+    <hr class="mt-0 mb-4">
+    <div class="col text-center">
+        <h2 class="mb-4" text-align="center">Key contributions</h2>
+    </div>
+    <img src="figures/structure_polar_online.png" style="width:100%">
+    <br>
+    <br>
+
+    </div>
+
+<!--    bibtex    -->
+    <hr class="mt-0 mb-4">
+    <div class="row mt-4">
+    <div class="col text-left">
+        <h2 class="mb-4">BibTex [WIP]</h2>
+    </div>
+    </div>
+    <div class="row mb-12">
+    <div class="col text-left">
+<pre><code class="language-bibtex">@misc{https://doi.org/10.48550/arxiv.2208.01957,
+  doi = {10.48550/ARXIV.2208.01957},
+  url = {https://arxiv.org/abs/2208.01957},
+  author = {Kim, Aleksandr and Brasó, Guillem and Ošep, Aljoša and Leal-Taixé, Laura},
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {PolarMOT: How Far Can Geometric Relations Take Us in 3D Multi-Object Tracking?},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+</code></pre></div></div>
+
+</div>
+
+<footer class="text-center mt-5">
+  <p>Ⓒ  &nbsp; 2022 &nbsp; Aleksandr Kim &nbsp; <a href="https://github.com/aleksandrkim61/" target="_blank">Github</a></p>
+</footer>
+    
+</body>
+</html>
